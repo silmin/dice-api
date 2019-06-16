@@ -1,1 +1,1 @@
-# slot-api
+# gacha-api
