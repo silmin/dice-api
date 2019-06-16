@@ -1,1 +1,1 @@
-# gacha-api
+# Dice-api
