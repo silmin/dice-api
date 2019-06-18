@@ -1,6 +1,7 @@
 # Dice-api
 
-This api simulate the dice.
+This api simulate the dice.  
+[run on heroku now](https://silmin-dice.herokuapp.com)
 
 ## Usage
 
