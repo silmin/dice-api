@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello, I'm Dice API"
+    return render_template("hello.html", title="Dice API");
 
 @app.route("/roll", methods=['GET', 'POST'])
 def roll():

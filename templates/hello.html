@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>Hello, I'm Dice API</h1>
+I simulate the dice.
+
+<h2>Usage</h2>
+
+<h3>Call URL</h3>
+(this domain)/roll
+
+<h3>Method</h3>
+<i>GET</i> or <i>POST</i>
+
+<h3>Params</h3>
+<i>faces</i>, <i>cnt</i> and <i>times</i> is required.
+<ul>
+    <li>faces: Number of faces of dice</li>
+    <li>cnt: Number of dice</li>
+    <li>times: Number of times to roll</li>
+</ul>
+
+{% endblock %}
