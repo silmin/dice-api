@@ -10,11 +10,13 @@ def hello():
 @app.route("/roll", methods=['GET', 'POST'])
 def roll():
     if request.method == 'GET': 
+        method = 'GET'
         faces = request.args.get('faces')
         cnt = request.args.get('cnt')
         times = request.args.get('times')
 
     elif request.method == 'POST': 
+        method = 'POST'
         faces = request.json['faces']
         cnt = request.json['cnt']
         times = request.json['times']
@@ -34,6 +36,7 @@ def roll():
         result.append(r)
 
     data = [
+        {"method": method},
         {"faces": faces},
         {"cnt": cnt},
         {"times": times},
